@@ -1,22 +1,39 @@
 //Business Logic
 
-function sumQuiz1 
 
 //User Interface Logic
 
 
 
+// $(document).ready(function() {
+//   $('form#personality').submit(function(event) {
+//     event.preventDefault();
+
+//     const sum1 = $(parseInt('input:checkbox:checked[name=temperament]')).val()
+
+//     if (sum1 === 1) {
+//     const quiz1 = 1;
+//       }  else if (sum1 === '2') {
+//     const quiz1 = 2;
+//       } else if (sum1 === '3')
+//       const quiz1 = 3;
+//     });
+// });
+
 $(document).ready(function() {
   $('form#personality').submit(function(event) {
     event.preventDefault();
 
-    const personality = $('input:checkbox:checked[name=temperament]').val()
+    const quiz1 = $('input:radio:checked[name=temperament]').val()
 
-
+    if (quiz1 === 'hot') {
+    } else if (quiz2 === 'cold') {
+      let sum1 = 2; 
+    } else if (quiz3 === 'cool') {
+      let sum1 = 3;
+    }
   })
-});
-
-
+  });
 
 $(document).ready(function() {
   $('form#interests').submit(function(event) {
