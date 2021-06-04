@@ -24,7 +24,7 @@
         <h1>How old are you?</h1>
         <select class="form-control" id="age">
           <option value="sel1">4-10</option>
-          <option value="sel2"></option>11-17</option>
+          <option value="sel2">11-17</option>
           <option value="sel3">18-100</option>
         </select>
         <div id="child">
@@ -35,6 +35,33 @@
 
       </form>
     </div>
-    
+    <div class="container">
+      <form id="interests">
+        <h3>I am interested in programming:</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="interests" value="gaming" checked>
+            Games
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="interests" value="websites">
+            Websites
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="interests" value="applications">
+            Applications
+          </label>
+        </div>
+        <button type="submit" class="button">Which language matches my interests?</button>
+      </form>
+      
+      <div id="interestOutput">
+        <p><span id="interest"></span></p>
+      </div>
+    </div>
 </body>
 </html>
