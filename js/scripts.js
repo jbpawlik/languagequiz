@@ -1,37 +1,50 @@
 //Business Logic
 
+function add(sum1, sum2, sum3) {
+  return sum1 + sum2 + sum3;
+}
 
 //User Interface Logic
 
 
-
-// $(document).ready(function() {
-//   $('form#personality').submit(function(event) {
-//     event.preventDefault();
-
-//     const sum1 = $(parseInt('input:checkbox:checked[name=temperament]')).val()
-
-//     if (sum1 === 1) {
-//     const quiz1 = 1;
-//       }  else if (sum1 === '2') {
-//     const quiz1 = 2;
-//       } else if (sum1 === '3')
-//       const quiz1 = 3;
-//     });
-// });
 
 $(document).ready(function() {
   $('form#personality').submit(function(event) {
     event.preventDefault();
 
     const quiz1 = $('input:radio:checked[name=temperament]').val()
+    const quiz2 = $('input:radio:checked[name=temperament]').val()
+    const quiz3 = $('input:radio:checked[name=temperament]').val()
 
     if (quiz1 === 'hot') {
-    } else if (quiz2 === 'cold') {
-      let sum1 = 2; 
-    } else if (quiz3 === 'cool') {
-      let sum1 = 3;
+      (sum1 = 1);
+      alert(sum1)
+    } else if (quiz1 === 'cold') {
+      (sum1 = 2);
+    } else if (quiz1 === 'cool') {
+      $(sum1 = 3);
     }
+
+    if (quiz2 === 'math') {
+      (sum1 = 1);
+    } else if (quiz2 === 'wild') {
+      (sum1 = 2);
+      alert(sum1);
+    } else if (quiz1 === 'arts') {
+      $(sum1 = 3);
+    }
+
+    if (quiz3 === 'iron') {
+      (sum1 = 1);
+    } else if (quiz2 === 'cat') {
+      (sum1 = 2);
+    } else if (quiz1 === 'mrs') {
+      $(sum1 = 3);
+    }
+
+    const perResult = add(sum1 + sum2 + sum3);
+    alert(perResult);
+
   })
   });
 
