@@ -13,18 +13,17 @@ body {
   text-indent: 1em;
   border: 5px solid black;
   box-sizing: border-box;
+  display:none;
 }
 
 #age {
   width: 90%
-  display:
 }
 
 .radio {
   border: 1px solid black;
   margin: .5em;
   padding: .5em;
-
 }
 
 h3 {
@@ -36,4 +35,5 @@ h3 {
 #interests {
   border: 5px solid black;
   padding: 1em;
+  display:none;
 }

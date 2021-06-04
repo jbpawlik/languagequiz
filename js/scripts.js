@@ -1,6 +1,19 @@
+//Business Logic
 
-
+function quizsum(number1, number2, number3) {
+  return number1 + number2 + number3
+}
 //User Interface Logic
+
+$(document).ready(function() {
+  $('form#personality').submit(function(event) {
+    event.preventDefault();
+
+  })
+});
+
+const personality = $('input:checkbox:checked[name=temperament]').val()
+
 
 $(document).ready(function() {
   $('form#interests').submit(function(event) {
