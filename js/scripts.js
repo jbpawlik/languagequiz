@@ -1,25 +1,19 @@
 $(document).ready(function() {
 
-const age = $('#age').val(1);
-  
-if (age = '1')
-  $('#child').show();
+const age = $select.val()
 
+if (age === '1')
+  $('#age').change(function() {
+  $('age option:selected').text();
+  $('#child').show();
+  });
 })
 
-// $(document).ready(function() {
-//   $('#formOne').submit(function(event){
-//     event.preventDefault();
-//     const animalInput = $('input#animal').val();
-//     const animalsInput = $('input#animals').val();
-//     $('.animals').append(animalsInput);
-//     $('.animal').append(animalInput);
-    
-//     $('#story').show();
-//   })
-
-
-// })
+// if (select = '1')
+//   $('#child').show(); {
+//     else if (val = '2');
+  
+//   };
 
 
 // $(document).ready(function() {
