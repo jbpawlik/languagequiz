@@ -8,9 +8,7 @@ body {
   background-color: lightgrey;
   margin:2em;
   padding:2em;
-  
   border: 5px solid black;
-  box-sizing: border-box;
 }
 p {
   margin:1em;
@@ -31,13 +29,10 @@ p {
   margin: .5em;
   padding: .5em;}
 .col-3 {
-  background-color: beige;
+
   border: 1px solid black;
   margin: 10px;
-  display: flexbox;
-
 }
-
 h3 {
   background-color: darkgray;
   border: 2px solid black;
