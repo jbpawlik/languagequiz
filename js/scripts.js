@@ -25,14 +25,18 @@ $(document).ready(function() {
     const age = $('select#age').val();
 
     if (age === 'sel1') {
-    $('#child').show();
+      $('#child').show();
+      $('#minor').hide();
+      $('#adult').hide();  
     } else if (age === 'sel2') {
       $('#minor').show();
+      $('#child').hide();
+      $('#adult').hide();
     } else if (age === 'sel3') {
       $('#adult').show();
+      $('#minor').hide();
+      $('#child').hide();
     }
   });
-  
-
 });
 
