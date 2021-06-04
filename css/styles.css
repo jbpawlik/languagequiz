@@ -1,29 +1,41 @@
 body {
   background-color: beige;
 }
-
-#child, #minor, #adult {
+#child, #minor, #adult, #outputLang, #interestOutput{
   display: none;
 }
-
-.jumbotron, #experience {
+.jumbotron, #experience, #interests, #personality {
   background-color: lightgrey;
-  margin:1em;
+  margin:2em;
   padding:2em;
-  text-indent: 1em;
+  
   border: 5px solid black;
   box-sizing: border-box;
-  display:none;
 }
-
+p {
+  margin:1em;
+  line-height: 1.25em;
+}
+.intro {
+  border: 2px solid black;
+  background-color: beige;
+}
 #age {
-  width: 90%
+  width: 100%;
 }
-
+.button {
+  width: 100%;
+}
 .radio {
   border: 1px solid black;
   margin: .5em;
-  padding: .5em;
+  padding: .5em;}
+.col-3 {
+  background-color: beige;
+  border: 1px solid black;
+  margin: 10px;
+  display: flexbox;
+
 }
 
 h3 {
@@ -31,9 +43,16 @@ h3 {
   border: 2px solid black;
   text-align: center;
 }
-
+h5 {
+  text-align: center;
+}
 #interests {
   border: 5px solid black;
   padding: 1em;
-  display: none;
+}
+.reveal {
+  border: 5px solid black;
+  margin: 1em;
+  background-color: beige;
+  padding: 1em;
 }

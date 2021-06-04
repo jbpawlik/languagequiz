@@ -15,10 +15,12 @@
     <div class=container>
       <div class=jumbotron>
         <h3>Which Programming Language is Right for You?</h3>
-        <p>An increasing number of people have become interested in the drama and intrigue of what goes on behind their phone and computer screens. Some are trying to make a career out of programming computers, while others are looking to explore coding as a hobby. Either way, to learn to code you must learn to speak the language of computers.</p>
-        <p>Just like human beings, computers speak a variety of languages. The most basic is binary, a series of zeroes and ones (think on/off, or yes/no). Very few people can program in binary. Modern languages use words, symbols, and punctuation to communicate with computers.</p>
-        <p>Most newcomers to programming want to know, "Which language should I learn?" The answer is complicated. Each language has strengths and weaknesses, but the common advice is to learn any language as the basic principles of computer programming are the same. Once you have a grasp on what a language is doing, you can then apply that understanding to another language.</p>
-        <p>That said, there are many differences between the languages. Use our handy guide to figure out which one might be right for you.</p>
+        <div class="intro">
+          <p>An increasing number of people have become interested in the drama and intrigue of what goes on behind their phone and computer screens. Some are trying to make a career out of programming computers, while others are looking to explore coding as a hobby. Either way, to learn to code you must learn to speak the language of computers.</p>
+          <p>Just like human beings, computers speak a variety of languages. The most basic is binary, a series of zeroes and ones (think on/off, or yes/no). Very few people can program in binary. Modern languages use words, symbols, and punctuation to communicate with computers.</p>
+          <p>Most newcomers to programming want to know, "Which language should I learn?" The answer is complicated. Each language has strengths and weaknesses, but the common advice is to learn any language as the basic principles of computer programming are the same. Once you have a grasp on what a language is doing, you can then apply that understanding to another language.</p>
+          <p>That said, there are many differences between the languages. Use our handy guide to figure out which one might be right for you.</p>
+      </div>
       </div>
       <form id="experience">
         <h3>How old are you?</h3>
@@ -29,13 +31,13 @@
           <option value="sel3">18-100</option>
         </select>
         <div id="child">
-          <p>A child in elementary school can learn how to program, but may only be able to access pseudo-code projects like those found on <a href="http://code.org">Code.org</a> with the support of their parents. This is an excellent way to introduce the joy of programming to younger children.</p>
+          <p class="reveal">A child in elementary school can learn how to program, but may only be able to access pseudo-code projects like those found on <a href="http://code.org">Code.org</a> with the support of their parents. This is an excellent way to introduce the joy of programming to younger children.</p>
         </div>
         <div id="minor">
-          <p>Starting around middle or early high school, an adolescent may experience considerable success with easier to learn programming languages like Python or React. Children with high aptitudes may access any available languages, with proper tutelage or diligent self study. The website <a href="http://code.org">Code.org</a>contains accessible coding exercises and games that appeal to children of all ages.</p>
+          <p class="reveal">Starting around middle or early high school, an adolescent may experience considerable success with easier to learn programming languages like Python or React. Children with high aptitudes may access any available languages, with proper tutelage or diligent self study. The website <a href="http://code.org">Code.org</a>contains accessible coding exercises and games that appeal to children of all ages.</p>
         </div>
         <div id="adult">
-          <p>Adults of all ages may pick and choose their preferred programming language. It is easier to start with a modern programming language that has plenty of documentation and debugging tools, such as JavaScript or Python. While your age may be high, your proficiency is at the same level as younger people exposed to programming early in life. Do not feel discouraged; it is never too late to learn a new skill.</p>
+          <p class="reveal">Adults of all ages may pick and choose their preferred programming language. It is easier to start with a modern programming language that has plenty of documentation and debugging tools, such as JavaScript or Python. While your age may be high, your proficiency is at the same level as younger people exposed to programming early in life. Do not feel discouraged; it is never too late to learn a new skill.</p>
         </div>
       </form>
     </div>
@@ -44,46 +46,42 @@
         <h3>I am interested in programming:</h3>
         <div class="radio">
           <label>
-            <input type="radio" name="interests" value="gaming" checked>
-            Games
+            <input type="radio" name="interests" value="gaming" checked>Games
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="interests" value="websites">
-            Websites
+            <input type="radio" name="interests" value="websites">Websites
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="interests" value="applications">
-            Applications
+            <input type="radio" name="interests" value="applications">Applications
           </label>
         </div>
         <button type="submit" class="button">Which language matches my interests?</button>
-        <div id="interestOutput">
+        <div id="interestOutput" class="reveal">
           <p><span id="interest"></span></p>
         </div>
       </form>
-      
-      <div id="interestOutput">
+      <div id="interestOutput" >
         <p><span id="interest"></span></p>
       </div>
     </div>
     <div class="container">
-      <h3>How does your personality affect which language you should learn?</h3>
       <form id="personality">
+        <h3>How does your personality affect which language you should learn?</h3>
         <div class="row">
-          <div class="col-4">
-            <h4>What is your temperament?</h4>
+          <div class="col-3">
+            <h5>What is your temperament?</h5>
               <div class="radio">
                 <label>
-                  <input type="radio" name="temperament" value="hot" checked>Hot-blooded
+                  <input type="radio" name="temperament" value="cold" checked>Cold-blooded
                 </label>
               </div>
               <div class="radio">
                 <label>
-                  <input type="radio" name="temperament" value="cold">Cold-blooded
+                  <input type="radio" name="temperament" value="hot">Hot-blooded
                 </label>
               </div>
               <div class="radio">
@@ -92,8 +90,8 @@
                 </label>
               </div>
           </div>
-          <div class="col-4">
-            <h4>What do you like to do for fun?</h4>
+          <div class="col-3">
+            <h5>What do you like to do for fun?</h5>
               <div class="radio">
                 <label>
                   <input type="radio" name="fun" value="math" checked>Arithmetic
@@ -110,8 +108,8 @@
                 </label>
               </div> 
           </div>
-          <div class="col-4">
-            <h4>Who is your favorite superhero?</h4>
+          <div class="col-3">
+            <h5>Who is your favorite superhero?</h5>
               <div class="radio">
                 <label>
                   <input type="radio" name="hero" value="iron" checked>Iron Man
@@ -130,7 +128,11 @@
           </div>
           <button type="submit" class="button1">Which language matches my interests?</button>
         </div>
+        <div id="outputLang" class="reveal">
+          <p>Your personality type would be a perfect match for <span id="perLang"></span></p>
+        </div>
       </form>
+      
     </div>
 </body>
 </html>
