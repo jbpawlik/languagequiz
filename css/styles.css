@@ -1,7 +1,39 @@
+body {
+  background-color: beige;
+}
+
 #child, #minor, #adult {
   display: none;
 }
 
-.jumbotron {
-  display:none;
+.jumbotron, #experience {
+  background-color: lightgrey;
+  margin:1em;
+  padding:2em;
+  text-indent: 1em;
+  border: 5px solid black;
+  box-sizing: border-box;
+}
+
+#age {
+  width: 90%
+  display:
+}
+
+.radio {
+  border: 1px solid black;
+  margin: .5em;
+  padding: .5em;
+
+}
+
+h3 {
+  background-color: darkgray;
+  border: 2px solid black;
+  text-align: center;
+}
+
+#interests {
+  border: 5px solid black;
+  padding: 1em;
 }
