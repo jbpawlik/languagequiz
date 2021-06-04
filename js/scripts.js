@@ -1,3 +1,7 @@
+
+
+//User Interface Logic
+
 $(document).ready(function() {
   $('form#interests').submit(function(event) {
     event.preventDefault();
@@ -15,6 +19,20 @@ $(document).ready(function() {
   })  
 });
 
-  // if ('#age option:selected')
-  // $('#child').show();
-  // })
+$(document).ready(function() {
+  $('select').change(function() {
+  
+    const age = $('select#age').val();
+
+    if (age === 'sel1') {
+    $('#child').show();
+    } else if (age === 'sel2') {
+      $('#minor').show();
+    } else if (age === 'sel3') {
+      $('#adult').show();
+    }
+  });
+  
+
+});
+
