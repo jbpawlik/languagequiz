@@ -13,36 +13,34 @@ $(document).ready(function() {
     event.preventDefault();
 
     const quiz1 = $('input:radio:checked[name=temperament]').val()
-    const quiz2 = $('input:radio:checked[name=temperament]').val()
-    const quiz3 = $('input:radio:checked[name=temperament]').val()
+    const quiz2 = $('input:radio:checked[name=fun]').val()
+    const quiz3 = $('input:radio:checked[name=hero]').val()
 
     if (quiz1 === 'hot') {
       (sum1 = 1);
-      alert(sum1)
     } else if (quiz1 === 'cold') {
       (sum1 = 2);
     } else if (quiz1 === 'cool') {
-      $(sum1 = 3);
+      (sum1 = 3);
     }
-
+    
     if (quiz2 === 'math') {
-      (sum1 = 1);
+      (sum2 = 1);
     } else if (quiz2 === 'wild') {
-      (sum1 = 2);
-      alert(sum1);
-    } else if (quiz1 === 'arts') {
-      $(sum1 = 3);
+      (sum2 = 2);
+    } else if (quiz2 === 'arts') {
+      (sum2 = 3);
     }
 
     if (quiz3 === 'iron') {
-      (sum1 = 1);
-    } else if (quiz2 === 'cat') {
-      (sum1 = 2);
-    } else if (quiz1 === 'mrs') {
-      $(sum1 = 3);
+      (sum3 = 1);
+    } else if (quiz3 === 'cat') {
+      (sum3 = 2);
+    } else if (quiz3 === 'mrs') {
+      (sum3 = 3);
     }
 
-    const perResult = add(sum1 + sum2 + sum3);
+    const perResult = add(sum1, sum2, sum3);
     alert(perResult);
 
   })
