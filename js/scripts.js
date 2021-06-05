@@ -92,7 +92,11 @@ $(document).ready(function() {
   
   const age = $('select#age').val();
 
-  if (age === 'sel1') {
+  if (age === 'sel0') {
+    $('#child').hide();
+    $('#minor').hide();
+    $('#adult').hide();  
+  } else if (age === 'sel1') {
     $('#child').show();
     $('#minor').hide();
     $('#adult').hide();  
