@@ -81,9 +81,7 @@ $(document).ready(function() {
   } else if (interest === 'applications') {
     $('#interest').text('You might want to learn how to program in Java. Java is not the same as JavaScript. It is an older, widely-used language that has extensive documentation and debugging tools.').toggle;
   }
-
   $('#interestOutput').show();
-  
   })  
 });
 
