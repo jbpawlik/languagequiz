@@ -74,7 +74,7 @@ $(document).ready(function() {
       $('#interest').text('You might want to learn how to program with C#. C# is used in the popular game creation engine Unity.');
     } else if (interest === 'websites') {
       $('#interest').text('You might want to learn how to program in JavaScript. JavaScript is a language that is used in all websites. There are many useful libraries and tools that exist for users of Unity.');
-    } else if (interest === 'applications') {
+    } else {
       $('#interest').text('You might want to learn how to program in Java. Java is not the same as JavaScript. It is an older, widely-used language that has extensive documentation and debugging tools.');
     }
     $('#interestOutput').show();
@@ -95,6 +95,8 @@ $(document).ready(function() {
       $('#minor').show();
     } else if (age === 'sel3') {
       $('#adult').show();
+    } else { 
+      $('select#age')
     }
   });
 });
