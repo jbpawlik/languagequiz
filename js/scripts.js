@@ -20,8 +20,7 @@ $(document).ready(function() {
       (sum1 = 2);
     } else {  
       (sum1 = 3);
-    }
-    
+    }    
     if (quiz2 === 'math') {
       (sum2 = 1);
     } else if (quiz2 === 'wild') {
@@ -29,7 +28,6 @@ $(document).ready(function() {
     } else {
       (sum2 = 3);
     }
-
     if (quiz3 === 'iron') {
       (sum3 = 1);
     } else if (quiz3 === 'cat') {
@@ -65,7 +63,7 @@ $(document).ready(function() {
       $('#perLang').text("Delphi. You are obviously Marina Abramovic.");
       $('#outputLang').show(); 
     }
-    })
+  })
 
   $('form#interests').submit(function(event) {
     event.preventDefault();
@@ -80,29 +78,24 @@ $(document).ready(function() {
       $('#interest').text('You might want to learn how to program in Java. Java is not the same as JavaScript. It is an older, widely-used language that has extensive documentation and debugging tools.');
     }
     $('#interestOutput').show();
-    })  
+  })  
 
   $('select').change(function() {
     
     const age = $('select#age').val();
 
-    if (age === 'sel0') {
-      $('#child').hide();
+    if ($('select#age')) {
+      $('#child' , ).hide();
       $('#minor').hide();
-      $('#adult').hide();  
-    } else if (age === 'sel1') {
+      $('#adult').hide(); 
+    }  
+    if (age === 'sel1') {
       $('#child').show();
-      $('#minor').hide();
-      $('#adult').hide();  
     } else if (age === 'sel2') {
       $('#minor').show();
-      $('#child').hide();
-      $('#adult').hide();
     } else if (age === 'sel3') {
       $('#adult').show();
-      $('#minor').hide();
-      $('#child').hide();
-      }
+    }
   });
 });
 
