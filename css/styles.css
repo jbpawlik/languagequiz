@@ -1,5 +1,5 @@
 body {
-  background-image: url("/languagequiz/img/texture.jpg")
+  background-image: url("../img/texture.jpg")
 }
 #child, #minor, #adult, #outputLang, #interestOutput{
   display: none;
